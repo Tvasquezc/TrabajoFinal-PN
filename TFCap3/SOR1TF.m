@@ -24,7 +24,7 @@ w=input('ingrese el valor de w 0<w<2: ');
             if Terr==0
             E(c+2)=norm(x1-x0,'inf');
             else
-                E(c+2)=norm(x1-x0,'inf');
+                E(c+2)=norm(x1-x0,2);
             end
             error=E(c+2);
             mx=[mx;x1'];

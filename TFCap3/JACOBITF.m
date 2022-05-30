@@ -1,4 +1,4 @@
-function  [E,s,c] = JACOBITF()
+function  [E,s,c] = JacobiTF()
 A=input('ingrese la matriz A: ');
 b=input('ingrese el vector de terminos independientes (sin transponer): ');
 b=b';
@@ -23,7 +23,7 @@ Terr=input('ingrese el tipo de norma 0 pra infinita, 1 para cuadrada: ');
             if Terr==0
             E(c+2)=norm(x1-x0,'inf');
             else
-                E(c+2)=norm(x1-x0,'inf');
+                E(c+2)=norm(x1-x0,2);
             end
             error=E(c+2);
             mx=[mx;x1'];

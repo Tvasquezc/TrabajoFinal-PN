@@ -23,5 +23,5 @@ Piv = input('sin pivoteo piv=0, usando pivoteo parcial piv=1 o pivoteo totalpiv=
         end
     end
     x=sustreg(Ab,n);
-    mark;
+    mark
 end
